@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="container">
+        <h1>Seja bem-vindo(a)</h1>
+        <h2>Crie sua conta e faça h2arte do time!</h2>
+    </header>
+    <form action="">
+            <label for="nomecompleto">Nome Completo:</label>
+            <input type="text" id="nome" name="nome" required placeholder="Nome e sobrenome">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+        <div class="form-column">
+            <!-- agrupei os itens em uma div, imagine como uma caixa com 2 campos, não precisa de classe pq não vou mudar o estilo, apenas informo que os elementos estão agrupados em uma caixa-->
+            <div>  
+                <label for="telefone">Telefone (Opcional):</label>
+                <input type="text" id="telefone" name="telefone">
+                <label for="datadenascimento">Senha:</label>
+                <input type="date" id="datadenascimento" name="datadenascimento">
+            </div>
+            <div>
+                <label for="senha">Data de Nascimento (Opcional)</label>
+                <input type="password" id="senha" name="senha" required>
+                <label for="confirmarsenha">Confirmção de senha:</label>
+                <input type="password" id="confirmarsenha" name="confirmarsenha" required>
+            </div>
+        </div>
+    </form>
+    <footer>
+        <p>Ao cadastrar você concorda com</p>
+        <p>nossos <span>Termos de uso</span> e ...</p>
+        <button>Cadastrar</button>
+    </footer>
+
+</body>
+</html>

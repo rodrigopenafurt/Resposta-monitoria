@@ -1,0 +1,44 @@
+/*no arquivo index.html, ao iniciar o projeto basta digitar  !   e enter que ele já coloca as tags iniciais pronta*/
+
+* {  /*comece sempre fazendo este reset, removendo a margin e o padding que padrão do html*/
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 1440px;
+}
+
+header {
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    width: 650px;   /*foi definido o tamanho da caixa, senão a área seria toda a tela após o header*/
+    margin: 0 auto; /*coloca o formulário no centro da página, experimente remover pra ver o que acontece, a caixa ficará no canto esquerdo por padrão*/
+    border: 5px solid red;
+    padding: 20px 55px; /*espaçamento interno para as letras não ficarem nos cantos ficando o 100% do width é 650px - 55px*/
+    margin-bottom: 10px;
+}
+
+label {  /*o padrão do display de quase tudo é display block, porém o do label é inline ficando em linha, por isso precisei mudar*/
+    display: block; /*faz o próximo item ficar embaixo, no caso o input*/
+    margin-bottom: 2px;
+}
+
+input {
+    width: 100%; /*ocupa 100% da largura que é 650 menos o padding das laterais do form aplicado -55px do padding do form*/
+    margin-bottom: 10px;
+}
+
+.form-column {  /*ao criar a div dentro dessa classe, eu empacoto as informações, ficando cada caixa com 2 campos, sem a div não funciona, experimente remover a div e veja o resultado*/
+    display: flex;  /* faz um elemento ficar ao lado do outro, como tem duas divs dentro dessa clase, fica uma caixa do lado da outra*/
+    justify-content: space-between; /*alinha os elementos nos campos opostos*/
+}
+
+footer {
+    text-align: center;
+}
