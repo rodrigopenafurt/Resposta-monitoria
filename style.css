@@ -17,7 +17,7 @@ header {
 }
 
 form {
-    width: 650px;   /*foi definido o tamanho da caixa, senão a área seria toda a tela após o header*/
+    width: 500px;   /*foi definido o tamanho da caixa, senão a área seria toda a tela após o header*/
     margin: 0 auto; /*coloca o formulário no centro da página, experimente remover pra ver o que acontece, a caixa ficará no canto esquerdo por padrão*/
     border: 5px solid red;
     padding: 20px 55px; /*espaçamento interno para as letras não ficarem nos cantos ficando o 100% do width é 650px - 55px*/
